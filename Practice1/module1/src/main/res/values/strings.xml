@@ -1,7 +1,18 @@
 <resources>
-    <string name="app_name">FirstApp</string>
-    <string name="module">module</string>
-    <string name="click">click</string>
-    <string name="car">car</string>
+    <string name="app_name">Contacts</string>
+    <string name="click1">click1</string>
+    <string name="click2">click2</string>
+
+    <string name="nameFiled" />
+    <string name="phoneFiled" />
+    <string name="mailFiled" />
+
+
+    <string name="nameTextV">Name:</string>
+    <string name="phoneTextV">Phone:</string>
+    <string name="mailTextV">E-Mail:</string>
+
+    <string name="carImage">Car</string>
+    <string name="saveBtn">Save</string>
 
 </resources>
