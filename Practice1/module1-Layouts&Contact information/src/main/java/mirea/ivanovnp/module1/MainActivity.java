@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         //setContentView(R.layout.table_layout);
         //setContentView(R.layout.relative_layout);
         //setContentView(R.layout.activity_second);
-/*
+
         TextView myTextView = (TextView) findViewById(R.id.textView8);
-        myTextView.setText("New text in MIREA");*/
+        myTextView.setText("New text in MIREA");
     }
 }
