@@ -7,55 +7,86 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="354dp"
-        android:layout_height="160dp"
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="32dp"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:contentDescription="@string/carImage"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/car" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28">
+        app:layout_constraintVertical_bias="0.45">
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="164dp"
-            android:layout_height="145dp"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center|left"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
                 android:text="@string/nameTextV"
                 android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:layout_editor_absoluteX="33dp"
                 tools:layout_editor_absoluteY="456dp" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center|left"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
                 android:text="@string/phoneTextV"
                 android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:layout_editor_absoluteX="33dp"
                 tools:layout_editor_absoluteY="503dp" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:gravity="center|left"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
                 android:text="@string/mailTextV"
                 android:textAlignment="viewStart"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 tools:layout_editor_absoluteX="33dp"
                 tools:layout_editor_absoluteY="551dp" />
 
@@ -63,14 +94,15 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="228dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/editTextName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="10"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/nameFiled"
@@ -78,13 +110,14 @@
                 android:minHeight="48dp"
                 android:text="@string/nameFiled"
                 android:textColor="#757575"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/editPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="10"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/phoneFiled"
@@ -92,53 +125,41 @@
                 android:minHeight="48dp"
                 android:text="@string/phoneFiled"
                 android:textColor="#757575"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/editTextEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="10"
                 android:ems="10"
                 android:hint="@string/mailFiled"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
                 android:text="@string/mailFiled"
                 android:textColor="#757575"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="129dp"
-        android:layout_height="132dp"
-        android:contentDescription="@string/carImage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04"
-        app:srcCompat="@drawable/car" />
-
     <Button
         android:id="@+id/button13"
-        android:layout_width="132dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="669dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="#22000000"
         android:text="@string/saveBtn"
+        android:textAlignment="center"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.983" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
