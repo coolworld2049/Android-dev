@@ -12,10 +12,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private TextView btnClickText;
-    private Button btnOk;
-    private Button btnCancel;
-    private Button btnSave;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnClickText =  findViewById(R.id.textViewBtnClick);
-        btnOk = findViewById(R.id.buttonOk);
-        btnCancel = findViewById(R.id.buttonCancel);
+        Button btnOk = findViewById(R.id.buttonOk);
+        Button btnCancel = findViewById(R.id.buttonCancel);
 
-        View.OnClickListener oclBtnOk = view -> {
+        @SuppressLint("SetTextI18n") View.OnClickListener oclBtnOk = view -> {
             Toast.makeText(this,"Нажата кнопка OK",Toast.LENGTH_SHORT).show();
             btnClickText.setText("Нажата кнопка OK");
         };
-        View.OnClickListener oclBtnCancel = view -> {
+        @SuppressLint("SetTextI18n") View.OnClickListener oclBtnCancel = view -> {
             Toast.makeText(this,"Нажата кнопка Cancel",Toast.LENGTH_SHORT).show();
             btnClickText.setText("Нажата кнопка Cancel");
         };
@@ -39,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnCancel.setOnClickListener(oclBtnCancel);
     }
 
+    @SuppressLint("SetTextI18n")
     public void onClickBtnSave(View view)
     {
         Toast.makeText(this,"Нажата кнопка Save",Toast.LENGTH_SHORT).show();
